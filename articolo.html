@@ -23,7 +23,8 @@
         <nav>
             <ul>
                 <li><a href="./index.html" title="Home Page">Home</a></li>
-                <li><a href="./articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
+                <li><a href="./articoli.html"
+                        title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
                 <li><a href="./contatti.html" title="Candidati inviando un tuo cv">Job</a></li>
             </ul>
         </nav>
@@ -33,33 +34,78 @@
     <hr>
 
     <main>
+
+        <div id="buttonsContainer">
+            <div>
+                <button class="navButton blueBottons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="blue"
+                        class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <button class="navButton blueBottons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="blue"
+                        class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                        <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                        <path
+                            d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <button class="navButton" id="scrollTop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="violet"
+                        class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+                    </svg> </button>
+            </div>
+        </div>
+
         <article class="clearfix">
-            <h1>Come creare un template per i post </h1>
-            <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
+            <h1>Come creare un <span id="underlinedText">template per i post <img
+                        src="./assets/img/underline.svg" alt=""></span>
+            </h1>
+            <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i>
+                    pubblicato il
                     25-10-2020</span></p>
-            <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
+            <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70"
+                height="70">
             <p> La prima cosa
                 da
-                fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da
+                fare è suddividere in blocchi logici la pagina, identificando le <strong>parti
+                    comuni</strong> da
                 applicare a tutte le pagine</p>
 
             <p>Le varie aree saranno quindi suddivise in:</p>
             <ul>
                 <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
-                <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
-                <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+                <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo
+                    principale)</li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code>
+                </li>
             </ul>
 
             <h2>Formattazione del codice</h2>
-            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con
-                    i CSS</strong>. Perciò i passi saranno:</p>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da
+                <strong>selezionare con
+                    i CSS</strong>. Perciò i passi saranno:
+            </p>
             <ol>
-                <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag
+                    appropriato</li>
                 <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
                 <li>Applicare gli stili CSS</li>
             </ol>
 
-            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
+            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione
+                pressoché totale.</p>
 
             <table>
                 <caption>Diffusione dei CSS</caption>
@@ -99,9 +145,12 @@
                 </tbody>
             </table>
 
-            <p>Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/"
-                    target="blank" title="Validatore CSS online del W3C">tool online</a> dedicato allo scopo. Una volta
-                ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
+            <p>Un test di validazione potrà essere fatto tramite il <a
+                    href="https://jigsaw.w3.org/css-validator/" target="blank"
+                    title="Validatore CSS online del W3C">tool online</a> dedicato allo scopo. Una
+                volta
+                ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri
+                developers come
                 loro:</p>
 
             <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM"
@@ -111,11 +160,13 @@
 
             <section>
                 <h2>Novità</h2>
-                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra
+                    newsletter:</p>
 
                 <form method="POST" action="elabora_form.php">
                     <fieldset>
-                        <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email" required>
+                        <input type="email" name="user_email" id="user_email"
+                            placeholder="inserisci l'email" required>
                         <button type="submit">Iscriviti!</button>
                     </fieldset>
                 </form>
@@ -127,7 +178,8 @@
             <h2>Articoli correlati</h2>
             <div>
                 <a href="./post2.html"
-                    title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice
+                    title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare
+                    il codice
                     HTML</a>
                 <p><i class="fas fa-tag"></i> Categoria: develop</p>
                 <p><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
@@ -135,14 +187,16 @@
 
             <div>
                 <a href="./post3.html"
-                    title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la
+                    title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere
+                    la
                     sintassi</a>
                 <p><i class="fas fa-tag"></i> Categoria: develop</p>
                 <p><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
             </div>
 
             <div>
-                <a href="./post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
+                <a href="./post4.html"
+                    title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
                     pagina</a>
                 <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
                 <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
@@ -154,10 +208,12 @@
 
     <footer>
         <p>Blog Epicode &copy;2021</p>
-        <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+        <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi
+            2 - Milano. P.IVA
             00112233. <a href="mailto:info@epicode.school"
                 title="contattami per informazioni/lavoro/privacy">info@epicode.school</a></address>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

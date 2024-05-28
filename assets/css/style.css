@@ -386,3 +386,86 @@ footer a {
     display: none;
   }
 }
+
+
+@media screen and (max-width: 575px) {
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+
+  .underilinedText {
+    position: relative;
+  }
+
+  .imgLeft {
+    float: left;
+  }
+
+  article h2 {
+    font-weight: normal;
+  }
+
+  table {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+
+  section {
+    position: relative;
+  }
+
+  section h2 {
+    position: absolute;
+    top: -20px;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  section p {
+    padding-top: 30px;
+  }
+
+  section fieldset {
+    margin-bottom: 20px;
+  }
+
+  aside div {
+    position: relative;
+  }
+
+  .fa-tag {
+    position: absolute;
+    font-size: 4rem;
+    opacity: 45%;
+    top: 15px;
+    right: 10px;
+  }
+
+  #buttonsContainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  #buttonsContainer div {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+  }
+
+  .navButton {
+    display: block;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid white;
+  }
+
+  .blueButtons {
+    color: blue;
+  }
+}
