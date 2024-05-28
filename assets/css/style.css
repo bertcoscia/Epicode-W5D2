@@ -449,6 +449,8 @@ footer a {
     bottom: 0;
     right: 0;
     z-index: 99;
+    margin-right: 5px;
+    margin-bottom: 10px;
   }
 
   #buttonsContainer div {
@@ -463,6 +465,7 @@ footer a {
     border-radius: 10px;
     background-color: transparent;
     border: 3px solid white;
+    box-shadow: 8px 3px 5px #dedede;
   }
 
   .blueButtons {
